@@ -1,0 +1,283 @@
+/* ============================================
+   POKÉMON PC BOX - Estilos
+   Diseño retro inspirado en los juegos de GBA
+   ============================================ */
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Imágenes pixeladas (estilo retro) */
+img {
+    image-rendering: pixelated;
+}
+
+/* ============================================
+   CONTENEDOR PRINCIPAL - Marco del PC
+   ============================================ */
+#pc-container {
+    display: flex;
+    gap: 8px;
+    background-color: #686868;
+    border: 4px solid #404040;
+    border-radius: 8px;
+    padding: 12px;
+    max-width: 850px;
+    width: 100%;
+}
+
+/* ============================================
+   PANEL IZQUIERDO - Info del Pokémon
+   ============================================ */
+#panel-info {
+    width: 250px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Título "PKMN DATA" */
+#panel-info-titulo {
+    background-color: #505050;
+    color: #f8f8f8;
+    padding: 6px 10px;
+    font-size: 10px;
+    text-align: center;
+    border: 2px solid #404040;
+    border-radius: 4px;
+}
+
+/* Pantalla azul con la imagen */
+#pantalla-pokemon {
+    background-color: #98c8e8;
+    border: 3px solid #404040;
+    border-radius: 4px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Imagen del Pokémon */
+#pokemon-imagen {
+    width: 130px;
+    height: 130px;
+    display: none;
+}
+
+/* Mensaje inicial */
+#mensaje-inicial {
+    color: #506878;
+    font-size: 8px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Sección de datos */
+#datos-pokemon {
+    background-color: #e8e8d0;
+    border: 3px solid #404040;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 7px;
+    color: #303030;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Nombre del Pokémon */
+#pokemon-nombre {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #c8c8a0;
+}
+
+/* Stats en texto */
+#pokemon-stats {
+    font-size: 6px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+/* ============================================
+   ETIQUETAS DE TIPO (Fire, Water, etc.)
+   ============================================ */
+.tipo {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 2px;
+    color: white;
+    font-size: 6px;
+    margin: 1px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Colores de cada tipo */
+.tipo-normal   { background-color: #a8a878; }
+.tipo-fire     { background-color: #f08030; }
+.tipo-water    { background-color: #6890f0; }
+.tipo-electric { background-color: #f8d030; color: #505050; }
+.tipo-grass    { background-color: #78c850; }
+.tipo-ice      { background-color: #98d8d8; color: #505050; }
+.tipo-fighting { background-color: #c03028; }
+.tipo-poison   { background-color: #a040a0; }
+.tipo-ground   { background-color: #e0c068; color: #505050; }
+.tipo-flying   { background-color: #a890f0; }
+.tipo-psychic  { background-color: #f85888; }
+.tipo-bug      { background-color: #a8b820; }
+.tipo-rock     { background-color: #b8a038; }
+.tipo-ghost    { background-color: #705898; }
+.tipo-dragon   { background-color: #7038f8; }
+.tipo-dark     { background-color: #705848; }
+.tipo-steel    { background-color: #b8b8d0; color: #505050; }
+.tipo-fairy    { background-color: #ee99ac; }
+
+/* ============================================
+   PANEL DERECHO - Caja de Pokémon
+   ============================================ */
+#panel-caja {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Barra superior con flechas y nombre de caja */
+#barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #58a848;
+    padding: 6px;
+    border: 2px solid #404040;
+    border-radius: 4px;
+}
+
+/* Botones de flechas */
+#btn-anterior,
+#btn-siguiente {
+    background-color: #e8e8d0;
+    border: 2px solid #a8a890;
+    border-radius: 4px;
+    color: #404040;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+#btn-anterior:active,
+#btn-siguiente:active {
+    transform: scale(0.95);
+}
+
+/* Nombre de la caja */
+#nombre-caja {
+    background-color: #e8f8e0;
+    border: 2px solid #68a058;
+    border-radius: 4px;
+    padding: 4px 16px;
+    font-size: 10px;
+    color: #305028;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* ============================================
+   GRILLA - Cuadrícula 6x5 con los sprites
+   ============================================ */
+#grilla-pokemon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    background-color: #88c070;
+    border: 3px solid #506840;
+    border-radius: 4px;
+    padding: 6px;
+    flex-grow: 1;
+    min-height: 300px;
+}
+
+/* Cada celda de Pokémon */
+.celda-pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+    aspect-ratio: 1;
+}
+
+/* Hover: fondo claro al pasar el mouse */
+.celda-pokemon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Pokémon seleccionado */
+.celda-pokemon.seleccionado {
+    background-color: rgba(255, 255, 100, 0.4);
+    border: 2px solid #c8a800;
+    border-radius: 4px;
+}
+
+/* Sprite dentro de la celda */
+.celda-pokemon img {
+    width: 100%;
+    height: 100%;
+    max-width: 56px;
+    max-height: 56px;
+    object-fit: contain;
+}
+
+/* ============================================
+   BARRA INFERIOR - Estado de carga
+   ============================================ */
+#barra-inferior {
+    display: flex;
+    justify-content: space-between;
+    background-color: #505050;
+    padding: 4px 8px;
+    border: 2px solid #404040;
+    border-radius: 4px;
+}
+
+#texto-carga,
+#texto-total {
+    color: #d0d0d0;
+    font-size: 6px;
+}
+
+/* ============================================
+   RESPONSIVE - Pantallas pequeñas
+   ============================================ */
+@media (max-width: 768px) {
+    #pc-container {
+        flex-direction: column;
+    }
+    #panel-info {
+        width: 100%;
+        min-width: auto;
+    }
+}

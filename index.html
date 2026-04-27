@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon PC Box - Pokédex</title>
+
+    <!-- Fuente pixel art de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal: simula el PC de Pokémon -->
+    <div id="pc-container">
+
+        <!-- PANEL IZQUIERDO: info del Pokémon seleccionado -->
+        <div id="panel-info">
+
+            <div id="panel-info-titulo">PKMN DATA</div>
+
+            <!-- Pantalla donde aparece la imagen -->
+            <div id="pantalla-pokemon">
+                <img id="pokemon-imagen" src="" alt="Pokémon">
+                <p id="mensaje-inicial">Selecciona un<br>Pokémon</p>
+            </div>
+
+            <!-- Datos del Pokémon -->
+            <div id="datos-pokemon">
+                <p id="pokemon-nombre">---</p>
+                <p id="pokemon-numero">Nº ---</p>
+                <div id="pokemon-tipos"></div>
+                <p id="pokemon-altura">Altura: ---</p>
+                <p id="pokemon-peso">Peso: ---</p>
+                <p id="pokemon-stats">Stats: ---</p>
+            </div>
+
+        </div>
+
+        <!-- PANEL DERECHO: caja con los Pokémon -->
+        <div id="panel-caja">
+
+            <!-- Navegación entre cajas -->
+            <div id="barra-superior">
+                <button id="btn-anterior" onclick="cambiarCaja(-1)">&#9664;</button>
+                <div id="nombre-caja">BOX 1</div>
+                <button id="btn-siguiente" onclick="cambiarCaja(1)">&#9654;</button>
+            </div>
+
+            <!-- Grilla 6x5 donde van los sprites -->
+            <div id="grilla-pokemon"></div>
+
+            <!-- Barra inferior con info de carga -->
+            <div id="barra-inferior">
+                <p id="texto-carga">Cargando...</p>
+                <p id="texto-total"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script con la lógica -->
+    <script src="script.js"></script>
+
+</body>
+</html>
