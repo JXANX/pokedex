@@ -1,0 +1,8 @@
+[2026-05-11 15:37:45] | IP: ::1 | Usuario: JXANX | Acción: REGISTRO_FALLIDO | Nombre de usuario ya existe
+[2026-05-11 15:37:53] | IP: ::1 | Usuario: JXANX | Acción: LOGIN_OK | Sesión iniciada (ID=1)
+[2026-05-11 15:37:53] | IP: ::1 | Usuario: JXANX | Acción: LISTAR_EQUIPOS | Consultó sus equipos (total: 0)
+[2026-05-11 15:44:37] | IP: ::1 | Usuario: JXANX | Acción: LISTAR_EQUIPOS | Consultó sus equipos (total: 0)
+[2026-05-11 15:44:47] | IP: ::1 | Usuario: JXANX | Acción: LISTAR_EQUIPOS | Consultó sus equipos (total: 0)
+[2026-05-11 16:07:37] | IP: ::1 | Usuario: JXANX | Acción: LOGIN_OK | Sesión iniciada (ID=1)
+[2026-05-11 16:07:37] | IP: ::1 | Usuario: JXANX | Acción: LISTAR_EQUIPOS | Consultó sus equipos (total: 0)
+[2026-05-11 16:13:01] | IP: ::1 | Usuario: JXANX | Acción: LISTAR_EQUIPOS | Consultó sus equipos (total: 0)
