@@ -19,7 +19,7 @@ Aplicación web para armar y guardar equipos de batalla Pokémon. Cada usuario t
 11. [Comandos útiles en MariaDB](#11-comandos-útiles-en-mariadb)
 12. [Errores comunes](#12-errores-comunes)
 13. [Mockups de vistas](#13-mockups-de-vistas)
-14. [14. Paleta de colores y tipografía](#14-Paleta-de-colores-y-tipografía)
+14. [Paleta de colores y tipografía](#14-Paleta-de-colores-y-tipografía)
 
 ---
 
