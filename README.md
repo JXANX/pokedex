@@ -19,6 +19,7 @@ Aplicación web para armar y guardar equipos de batalla Pokémon. Cada usuario t
 11. [Comandos útiles en MariaDB](#11-comandos-útiles-en-mariadb)
 12. [Errores comunes](#12-errores-comunes)
 13. [Mockups de vistas](#13-mockups-de-vistas)
+14. [14. Paleta de colores y tipografía](#14-Paleta-de-colores-y-tipografía)
 
 ---
 
@@ -445,6 +446,45 @@ EXIT;
 
 <img width="383" height="376" alt="image" src="https://github.com/user-attachments/assets/f8da2821-0204-4870-af4d-48ec395e9b45" />
 
+
+---
+
+## 14. Paleta de colores y tipografía
+
+### Colores
+
+| Color | Muestra | Hex | Uso |
+|---|---|---|---|
+| Rojo Pokémon | ![#E3350D](https://placehold.co/40x20/E3350D/E3350D.png) | `#E3350D` | Botones principales, tabs activos, acentos |
+| Azul oscuro | ![#1A1A2E](https://placehold.co/40x20/1A1A2E/1A1A2E.png) | `#1A1A2E` | Fondo general de la página |
+| Azul medio | ![#16213E](https://placehold.co/40x20/16213E/16213E.png) | `#16213E` | Fondo de paneles y tarjetas |
+| Azul profundo | ![#0F3460](https://placehold.co/40x20/0F3460/0F3460.png) | `#0F3460` | Fondo de inputs |
+| Verde agua | ![#4ECCA3](https://placehold.co/40x20/4ECCA3/4ECCA3.png) | `#4ECCA3` | Nombre del usuario en la barra de sesión |
+| Rojo error | ![#FF4444](https://placehold.co/40x20/FF4444/FF4444.png) | `#FF4444` | Mensajes de error, botón de salir |
+| Rojo hover | ![#FF5C3A](https://placehold.co/40x20/FF5C3A/FF5C3A.png) | `#FF5C3A` | Hover de botones principales |
+| Gris borde | ![#444444](https://placehold.co/40x20/444444/444444.png) | `#444444` | Bordes de paneles e inputs |
+| Blanco | ![#FFFFFF](https://placehold.co/40x20/FFFFFF/FFFFFF.png) | `#FFFFFF` | Texto principal sobre fondos oscuros |
+| Gris texto | ![#888888](https://placehold.co/40x20/888888/888888.png) | `#888888` | Texto secundario y deshabilitado |
+
+### Tipografía
+
+| Fuente | Origen | Uso |
+|---|---|---|
+| **Press Start 2P** | Google Fonts | Toda la interfaz — títulos, botones, etiquetas, textos |
+
+La aplicación usa una única fuente en toda la interfaz para mantener la estética retro tipo Game Boy. Se importa así en el HTML:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+```
+
+Y se aplica en el CSS:
+
+```css
+font-family: 'Press Start 2P', monospace;
+```
+
+Los tamaños van desde `0.5rem` en textos pequeños como fechas y errores, hasta `0.7rem` en títulos de sección.
 
 ---
 
