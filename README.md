@@ -422,23 +422,29 @@ EXIT;
 
 ### Pantalla de Login / Registro
 
-> _(Captura pendiente)_
+<img width="538" height="472" alt="image" src="https://github.com/user-attachments/assets/637aaedc-97f4-4057-94c6-21dafd8c8c1a" />
+<img width="458" height="440" alt="image" src="https://github.com/user-attachments/assets/b4efd2f5-72df-4921-b20e-6278a72db0f4" />
+
 
 ### App principal — PC Box
 
-> _(Captura pendiente)_
+<img width="593" height="616" alt="image" src="https://github.com/user-attachments/assets/428b05a1-d34e-4dd5-aa56-4e530f879d5d" />
+
 
 ### Panel de información de un Pokémon
 
-> _(Captura pendiente)_
+<img width="275" height="444" alt="image" src="https://github.com/user-attachments/assets/fd2c407e-7273-4e40-87d1-0619dfd8b83a" />
+
 
 ### Constructor de equipo con slots
 
-> _(Captura pendiente)_
+<img width="329" height="364" alt="image" src="https://github.com/user-attachments/assets/f5023793-7a2b-497e-9bce-0f8b6104c25c" />
+
 
 ### Lista de equipos guardados
 
-> _(Captura pendiente)_
+<img width="383" height="376" alt="image" src="https://github.com/user-attachments/assets/f8da2821-0204-4870-af4d-48ec395e9b45" />
+
 
 ---
 
